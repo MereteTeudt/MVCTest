@@ -1,0 +1,11 @@
+﻿@model MVCTest.Models.SubscribeModel
+
+@using (Html.BeginForm("Subscribe", "Subscribe", FormMethod.Post))
+{
+    @Html.TextBoxFor(model => model.Email)
+    @Html.ValidationMessageFor(model => model.Email)
+    @Html.TextBoxFor(model => model.Name)
+    @Html.ValidationMessageFor(model => model.Name)
+    <button type="submit">Subscribe</button>
+}
+
